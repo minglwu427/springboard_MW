@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal width (cm) <= 0.8\ngini = 0.66\nsamples = 96\nvalue = [43, 53, 54]\nclass = virginica", fillcolor="#fefdff"] ;
+1 [label="gini = 0.0\nsamples = 31\nvalue = [43, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.5\nsamples = 65\nvalue = [0, 53, 54]\nclass = virginica", fillcolor="#fdfbff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal width (cm) <= 1.35\ngini = 0.21\nsamples = 35\nvalue = [0, 53, 7]\nclass = versicolor", fillcolor="#53e892"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 18\nvalue = [0, 34, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="petal length (cm) <= 5.35\ngini = 0.39\nsamples = 17\nvalue = [0, 19, 7]\nclass = versicolor", fillcolor="#82efaf"] ;
+3 -> 5 ;
+6 [label="sepal length (cm) <= 5.05\ngini = 0.24\nsamples = 15\nvalue = [0, 19, 3]\nclass = versicolor", fillcolor="#58e995"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="sepal length (cm) <= 6.05\ngini = 0.09\nsamples = 14\nvalue = [0, 19, 1]\nclass = versicolor", fillcolor="#43e688"] ;
+6 -> 8 ;
+9 [label="sepal width (cm) <= 2.45\ngini = 0.28\nsamples = 5\nvalue = [0, 5, 1]\nclass = versicolor", fillcolor="#61ea9a"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 4\nvalue = [0, 5, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 9\nvalue = [0, 14, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 4]\nclass = virginica", fillcolor="#8139e5"] ;
+5 -> 13 ;
+14 [label="gini = 0.0\nsamples = 30\nvalue = [0, 0, 47]\nclass = virginica", fillcolor="#8139e5"] ;
+2 -> 14 ;
+}
